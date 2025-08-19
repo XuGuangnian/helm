@@ -66,7 +66,7 @@ diagnosticMode:
 ## @param image.debug Specify if debug values should be set
 ##
 image:
-  registry: REGIP
+  registry: docker.io
   repository: bitnami/kafka
   tag: 3.1.0-debian-10-r52
   ## Specify a imagePullPolicy
@@ -700,7 +700,7 @@ externalAccess:
     ## @param externalAccess.autoDiscovery.image.pullSecrets Init container auto-discovery image pull secrets
     ##
     image:
-      registry: REGIP
+      registry: docker.io
       repository: bitnami/kubectl
       tag: 1.23.5-debian-10-r1
       ## Specify a imagePullPolicy
@@ -927,7 +927,7 @@ volumePermissions:
   ## @param volumePermissions.image.pullSecrets Init container volume-permissions image pull secrets
   ##
   image:
-    registry: REGIP
+    registry: docker.io
     repository: bitnami/bitnami-shell
     tag: 10-debian-10-r372
     pullPolicy: IfNotPresent
@@ -1005,7 +1005,7 @@ metrics:
     ## @param metrics.kafka.image.pullSecrets Specify docker-registry secret names as an array
     ##
     image:
-      registry: REGIP
+      registry: docker.io
       repository: bitnami/kafka-exporter
       tag: 1.4.2-debian-10-r182
       ## Specify a imagePullPolicy
@@ -1231,7 +1231,7 @@ metrics:
     ## @param metrics.jmx.image.pullSecrets Specify docker-registry secret names as an array
     ##
     image:
-      registry: REGIP
+      registry: docker.io
       repository: bitnami/jmx-exporter
       tag: 0.16.1-debian-10-r245
       ## Specify a imagePullPolicy

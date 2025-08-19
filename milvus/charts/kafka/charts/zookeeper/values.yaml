@@ -73,7 +73,7 @@ diagnosticMode:
 ## @param image.debug Specify if debug values should be set
 ##
 image:
-  registry: REGIP
+  registry: docker.io
   repository: bitnami/zookeeper
   tag: 3.7.0-debian-10-r320
   ## Specify a imagePullPolicy
@@ -619,7 +619,7 @@ volumePermissions:
   ## @param volumePermissions.image.pullSecrets Init container volume-permissions image pull secrets
   ##
   image:
-    registry: REGIP
+    registry: docker.io
     repository: bitnami/bitnami-shell
     tag: 10-debian-10-r367
     pullPolicy: IfNotPresent

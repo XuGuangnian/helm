@@ -67,7 +67,7 @@ diagnosticMode:
 ## @param image.debug Enable image debug mode
 ##
 image:
-  registry: REGIP
+  registry: docker.io
   repository: bitnami/etcd
   tag: 3.5.0-debian-10-r38
   ## Specify a imagePullPolicy
@@ -505,7 +505,7 @@ volumePermissions:
   ## @param volumePermissions.image.pullSecrets Specify docker-registry secret names as an array
   ##
   image:
-    registry: REGIP
+    registry: docker.io
     repository: bitnami/bitnami-shell
     tag: 10-debian-10-r147
     pullPolicy: Always
