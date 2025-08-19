@@ -90,7 +90,7 @@ livenessProbe:
 
 image:
   # -- The Docker registry
-  registry: docker.io
+  registry: REGIP
   # -- Docker image repository
   repository: grafana/grafana
   # Overrides the Grafana image tag whose default is the chart appVersion
@@ -110,7 +110,7 @@ testFramework:
   enabled: true
   image:
     # -- The Docker registry
-    registry: docker.io
+    registry: REGIP
     repository: bats/bats
     tag: "v1.4.1"
   imagePullPolicy: IfNotPresent
@@ -166,7 +166,7 @@ extraLabels: {}
 
 downloadDashboardsImage:
   # -- The Docker registry
-  registry: docker.io
+  registry: REGIP
   repository: curlimages/curl
   tag: 7.85.0
   sha: ""
@@ -386,7 +386,7 @@ initChownData:
   ##
   image:
     # -- The Docker registry
-    registry: docker.io
+    registry: REGIP
     repository: library/busybox
     tag: "1.31.1"
     sha: ""
@@ -1107,7 +1107,7 @@ imageRenderer:
     behavior: {}
   image:
     # -- The Docker registry
-    registry: docker.io
+    registry: REGIP
     # image-renderer Image repository
     repository: grafana/grafana-image-renderer
     # image-renderer Image tag
