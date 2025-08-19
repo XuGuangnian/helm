@@ -634,7 +634,6 @@ minio:
   name: minio
   mode: distributed
   image:
-    repository: REGIP/minio/minio
     tag: "RELEASE.2024-12-18T13-15-44Z"
     pullPolicy: IfNotPresent
   accessKey: minioadmin
@@ -1043,27 +1042,27 @@ pulsar:
 
   images:
     broker:
-      repository: apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       pullPolicy: IfNotPresent
       tag: 2.9.5
     autorecovery:
-      repository: apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       tag: 2.9.5
       pullPolicy: IfNotPresent
     zookeeper:
-      repository: apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       pullPolicy: IfNotPresent
       tag: 2.9.5
     bookie:
-      repository: apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       pullPolicy: IfNotPresent
       tag: 2.9.5
     proxy:
-      repository: apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       pullPolicy: IfNotPresent
       tag: 2.9.5
     pulsar_manager:
-      repository: apachepulsar/pulsar-manager
+      repository: REGIP/apachepulsar/pulsar-manager
       pullPolicy: IfNotPresent
       tag: v0.1.0
 
@@ -1197,7 +1196,7 @@ pulsar:
     component: pulsar-init
     image:
       # the image used for running `pulsar-cluster-initialize` job
-      repository: apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       tag: 2.9.5
 
 
@@ -1330,7 +1329,7 @@ externalPulsar:
   port: 6650
   maxMessageSize: "5242880"  # 5 * 1024 * 1024 Bytes, Maximum size of each message in pulsar.
   tenant: public
-  namespace: ${NAMESPACE}
+  namespace: milvus
   authPlugin: ""
   authParams: ""
 
