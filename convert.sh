@@ -8,8 +8,6 @@ set -e
 # WORK_DIR=/root/addons/milvus-5.0.0
 WORK_DIR=/home/gengen/workspace/helm/milvus
 
-cp $WORK_DIR/values.yaml $WORK_DIR/ds-milvus-values.yaml
-
 # 去除repository 的 ""
 sed -i 's/^\(\s*repository:\) "\([^"]*\)"/\1 \2/' $WORK_DIR/ds-milvus-values.yaml
 
