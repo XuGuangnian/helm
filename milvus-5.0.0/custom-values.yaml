@@ -10,7 +10,7 @@ cluster:
 
 image:
   all:
-    repository: ${REGIP}/milvusdb/milvus
+    repository: REGIP/milvusdb/milvus
     tag: v2.6.0
     pullPolicy: IfNotPresent
     ## Optionally specify an array of imagePullSecrets.
@@ -223,7 +223,7 @@ log:
 ## Enable heaptrack in production is not recommended.
 heaptrack:
   image:
-    repository: ${REGIP}/milvusdb/heaptrack
+    repository: REGIP/milvusdb/heaptrack
     tag: v0.1.0
     pullPolicy: IfNotPresent
 
@@ -583,7 +583,7 @@ attu:
   enabled: false
   name: attu
   image:
-    repository: ${REGIP}/zilliz/attu
+    repository: REGIP/zilliz/attu
     tag: v2.5.3
     pullPolicy: IfNotPresent
   service:
@@ -634,7 +634,7 @@ minio:
   name: minio
   mode: distributed
   image:
-    repository: ${REGIP}/minio/minio
+    repository: REGIP/minio/minio
     tag: "RELEASE.2024-12-18T13-15-44Z"
     pullPolicy: IfNotPresent
   accessKey: minioadmin
@@ -698,7 +698,7 @@ etcd:
   pdb:
     create: false
   image:
-    repository: ${REGIP}/milvusdb/etcd
+    repository: REGIP/milvusdb/etcd
     tag: "3.5.18-r1"
     pullPolicy: IfNotPresent
 
@@ -779,23 +779,23 @@ pulsarv3:
 
   images:
     zookeeper:
-      repository: ${REGIP}/apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       tag: 3.0.7
       pullPolicy: IfNotPresent
     bookie:
-      repository: ${REGIP}/apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       tag: 3.0.7
       pullPolicy: IfNotPresent
     autorecovery:
-      repository: ${REGIP}/apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       tag: 3.0.7
       pullPolicy: IfNotPresent
     broker:
-      repository: ${REGIP}/apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       tag: 3.0.7
       pullPolicy: IfNotPresent
     proxy:
-      repository: ${REGIP}/apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       tag: 3.0.7
       pullPolicy: IfNotPresent
 
@@ -901,7 +901,7 @@ pulsarv3:
   pulsar_metadata:
     component: pulsar-init
     image:
-      repository: ${REGIP}/apachepulsar/pulsar
+      repository: REGIP/apachepulsar/pulsar
       tag: 3.0.7
       pullPolicy: IfNotPresent
 
@@ -1210,7 +1210,7 @@ kafka:
   name: kafka
   replicaCount: 3
   image:
-    repository: ${REGIP}/bitnami/kafka
+    repository: REGIP/bitnami/kafka
     tag: 3.1.0-debian-10-r52
   ## Increase graceful termination for kafka graceful shutdown
   terminationGracePeriodSeconds: "90"
@@ -1252,14 +1252,14 @@ kafka:
     kafka:
       enabled: false
       image:
-        repository: ${REGIP}/bitnami/kafka-exporter-archived
+        repository: REGIP/bitnami/kafka-exporter-archived
         tag: 1.4.2-debian-10-r182
 
     ## Prometheus JMX exporter: exposes the majority of Kafkas metrics
     jmx:
       enabled: false
       image:
-        repository: ${REGIP}/bitnami/jmx-exporter
+        repository: REGIP/bitnami/jmx-exporter
         tag: 0.16.1-debian-10-r245
 
     ## To enable serviceMonitor, you must enable either kafka exporter or jmx exporter.
@@ -1367,7 +1367,7 @@ tei:
   enabled: false
   name: text-embeddings-inference
   image:
-    repository: ${REGIP}/ghcr.io/huggingface/text-embeddings-inference
+    repository: REGIP/ghcr.io/huggingface/text-embeddings-inference
     tag: cpu-1.6
     pullPolicy: IfNotPresent
   service:
